@@ -40,7 +40,7 @@ chmod +x modules/os/LinEnum/LinEnum.sh
 read -p "Do you want to auto-install MobSF locally? (y/n): " install_mobsf
 if [[ "$install_mobsf" == "y" ]]; then
     echo "[*] Downloading and setting up MobSF..."
-    git clone https://github.com/MobSF/Mobile-Security-Framework-MobSF.git mobsf
+    git clone --depth 1 https://github.com/MobSF/Mobile-Security-Framework-MobSF.git mobsf
     cd mobsf
     pip3 install -r requirements.txt
     echo "[*] To start MobSF, run: cd mobsf && ./run.sh"
