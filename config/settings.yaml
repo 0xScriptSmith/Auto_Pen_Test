@@ -1,0 +1,42 @@
+# === GENERAL CONFIGURATION ===
+mode: web                      # Default mode: domain, web, api, mobile, os, iot
+output: results/scan_results.txt
+
+# === AI INTEGRATION ===
+openai_api_key: ""             # Add your OpenAI API key here if using AI summarization
+
+# === TOOL CONFIGURATION ===
+
+# Domain Recon
+amass_path: amass             # Auto-installed binary
+subfinder_path: subfinder     # Auto-installed binary
+
+# Web Scanners
+sqlmap_path: sqlmap           # Auto-installed binary
+wapiti_path: wapiti           # Auto-installed binary
+xsstrike_path: xsstrike       # Auto-installed via pip
+
+# API Testing
+arjun_path: arjun             # Auto-installed via pip
+zap_cli_path: zap-cli         # Auto-installed with zaproxy
+
+# Mobile Testing
+mobsf_api_key: ""             # Required if using MobSF REST API
+mobsf_url: "http://localhost:8000"
+
+# IoT Testing
+binwalk_path: binwalk         # Auto-installed binary
+shodan_api_key: ""            # Required for Shodan IoT scanning
+
+# OS Enumeration
+linpeas_path: linpeas.sh      # Auto-downloaded during setup
+linenum_path: LinEnum.sh      # Auto-downloaded during setup
+
+# === REPORTING OPTIONS ===
+report_format: both           # Options: txt, html, both
+report_dir: results/reports   # Output directory for reports
+
+# === ADVANCED OPTIONS ===
+proxy: ""                     # Optional proxy (e.g., http://127.0.0.1:8080)
+timeout: 15                   # Timeout for subprocess/network ops (in seconds)
+python_path: python3          # Default Python interpreter

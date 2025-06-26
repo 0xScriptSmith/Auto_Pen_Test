@@ -1,0 +1,23 @@
+# 📁 report/templates/report_template.html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Scan Report</title>
+    <link rel="stylesheet" href="../styles/report.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Automated Pentest Report</h1>
+        <p><strong>Target:</strong> {{ target }}</p>
+        <p><strong>Mode:</strong> {{ mode }}</p>
+        <p><strong>Generated On:</strong> {{ timestamp }}</p>
+
+        <h2>Summary</h2>
+        <pre>{{ summary }}</pre>
+
+        <h2>Full Results</h2>
+        <pre>{{ results }}</pre>
+    </div>
+</body>
+</html>

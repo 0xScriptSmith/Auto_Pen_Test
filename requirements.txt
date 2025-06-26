@@ -1,0 +1,6 @@
+colorama
+pyyaml
+requests
+shodan
+python-owasp-zap-v2.4
+python-magic
