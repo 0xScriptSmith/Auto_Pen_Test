@@ -25,6 +25,7 @@ AutoPenTest/
 ├── modules/                   # All scanning logic grouped by type
 │   ├── api/
 │   ├── domain/
+│   ├── httpx/ 
 │   ├── web/
 │   ├── mobile/
 │   ├── iot/
