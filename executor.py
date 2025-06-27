@@ -1,18 +1,19 @@
 # executor.py
 
 from modules.web.web_wrapper import run_sqlmap, run_wapiti, run_xsstrike
-from modules.domain.recon_wrapper import (
+from modules.domain.domain_wrapper import (
     run_amass,
     run_theharvester,
     run_dnsrecon,
     run_sublist3r
 )
-from modules.api.arjun_wrapper import run_arjun
-from modules.api.zap_wrapper import run_zap_scan
+from modules.api.arjun_wrapper import run as run_arjun
+from modules.api.zap_wrapper import run as run_zap_scan
 from modules.os.os_wrapper import run_linpeas, run_linenum
 from modules.iot.iot_wrapper import run_iot_recon
 from modules.mobile.mobile_scanner import run_all_mobile_scans
 from modules.httpx.httpx_wrapper import run_httpx_analysis
+
 
 
 def run_all_web_scans(target_url):
