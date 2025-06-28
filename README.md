@@ -186,6 +186,8 @@ The following tools are downloaded and configured via `auto_install_setup.sh`:
 
 ## 🤝 Contributions
 
+We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) guide to get started.
+
 We welcome contributions!
 - Fork the repo
 - Add new tools or enhancements
